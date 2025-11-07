@@ -13,7 +13,9 @@ All 3D models used in the simulation are stored in the **models/** folder, while
 This package includes two launch files:
     - dyniminion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2.
     - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame.
----
+
+---    
+
 ### Package Structure
 
 dynominion_gazebo
