@@ -1,4 +1,4 @@
-# dynominion_description
+# **dynominion_description**
 
 ### Overview
 
@@ -22,6 +22,7 @@ dynominion_description
         dynominion.materials.xacro
         dynominion_description.urdf.xacro
 ---
+
 
 ### System Requirements
 

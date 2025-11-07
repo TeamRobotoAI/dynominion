@@ -1,4 +1,4 @@
-# dynominion_gazebo
+# **dynominion_gazebo**
 
 ### Overview
 
@@ -11,8 +11,9 @@ This package enables real-time interaction, control, and visualization of the ro
 All 3D models used in the simulation are stored in the **models/** folder, while the Gazebo world definitions are located in the **worlds/** folder.
 
 This package includes two launch files:
-    - dyniminion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2.
+    - dynominion_gazebo.launch.py: Spawns the Dynominion robot in the Gazebo world and establishes communication between Gazebo and ROS 2.
     - rviz_model_view.launch.py: Visualizes the Dynominion robot in RViz2 using a fixed reference frame
+
 
 --- 
 ### Package Structure
@@ -27,7 +28,7 @@ dynominion_gazebo
 │ └── gz_bridge.yaml
 │
 ├── dynominion_gazebo
-│ ├── init.py
+│ ├── __init__.py
 │ ├── joint_state_republisher.py
 │ └── odom_modifier.py
 │
@@ -52,6 +53,7 @@ dynominion_gazebo
 └── worlds
 └── cafe.world
 ---        
+
         
 ### Package Requirements
 
@@ -69,5 +71,5 @@ dynominion_gazebo
 
 In case for view
 
-`ros2 launch dynominion_gazebo rivz_model_view.launch.py`
+`ros2 launch dynominion_gazebo rviz_model_view.launch.py`
 

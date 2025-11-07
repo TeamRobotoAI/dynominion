@@ -1,4 +1,4 @@
-# dynominion_navigation
+# **dynominion_navigation**
 
 ### Overview
 
@@ -9,6 +9,7 @@ This package launches the Nav2 stack for Dynominion using the dynominion_nav_bri
 The navigation parameters and configuration files are stored in the **config/** folder.
 
 All parameters used in the configuration are based on the default Nav2 examples, except for the customized footprint and collision settings, which are tailored for the Dynominion robot’s geometry.
+
 
 ---
 ### Package Structure
@@ -27,6 +28,7 @@ dynominion_navigation
 \---rviz
         nav2_view.rviz
 ---
+
 
 ### Package Requirements
 

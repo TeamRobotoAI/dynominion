@@ -1,6 +1,6 @@
-#dynominion_slam
+# **dynominion_slam**
 
-###Overview
+### Overview
 
 The dynominion_slam package enables SLAM Toolbox–based mapping for the Dynominion robot. It provides both online and offline mapping capabilities to support flexible and efficient map generation.
 
@@ -12,6 +12,8 @@ The launch folder includes three main launch files:
 	- online_async_launch.py – Performs live mapping asynchronously. The map is updated after loop closures or periodic optimizations.
     - online_sync_launch.py – Performs live mapping synchronously, updating the map with each incoming sensor measurement.
     - offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
+
+
 ---
 ### Package Structure
 
@@ -33,6 +35,7 @@ dynominion_slam
 \---rviz
         mapping.rviz
 ---
+
 
 ### Package Requirements 
 
