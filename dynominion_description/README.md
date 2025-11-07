@@ -3,6 +3,7 @@
 ### Overview
 
 The Dynominion package encapsulates the geometric and visual aspects of the robot—expressed through a URDF (Unified Robot Description Format) model—enabling accurate simulation, visualization, and robot description for use with ROS 2 ecosystems.
+
 ---
 ### Package structure
 
@@ -21,6 +22,7 @@ dynominion_description
 \---urdf
         dynominion.materials.xacro
         dynominion_description.urdf.xacro
+        
 ---
 
 
