@@ -12,17 +12,17 @@ All parameters used in the configuration are based on the default Nav2 examples,
 
 ###Package Structure
 
-dynominion_navigation
-├── CMakeLists.txt
-├── config
-│   └── nav_param.yaml
-├── launch
-│   ├── dynominion_nav_bringup.launch.py
-│   └── navigation_launch.py
-├── package.xml
-├── README.md
-└── rviz
-    └── nav2_view.rviz
+dynominion_navigation       
+├── CMakeLists.txt      
+├── config      
+│   └── nav_param.yaml      
+├── launch      
+│   ├── dynominion_nav_bringup.launch.py        
+│   └── navigation_launch.py    
+├── package.xml 
+├── README.md   
+└── rviz        
+    └── nav2_view.rviz  
 
 ###Package Requirements
 

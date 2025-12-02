@@ -16,33 +16,33 @@ This package includes two launch files:
 
 ###Package Structure
 
-dynominion_gazebo
-├── CMakeLists.txt
-├── config
-│   ├── diff_drive_controller.yaml
-│   └── gz_bridge.yaml
-├── dynominion_gazebo
-│   ├── __init__.py
-│   ├── joint_state_republisher.py
-│   └── odom_modifier.py
-├── launch
-│   ├── dynominion_gazebo.launch.py
-│   └── rviz_model_view.launch.py
-├── models
-│   ├── actor
-│   ├── Cafe
-│   ├── Cafe_table
-│   └── male_visitor
-├── package.xml
-├── README.md
-├── rviz
-│   └── view_robot.rviz
-├── urdf
-│   ├── dynominion.urdf.xacro
-│   ├── gazebo_ros2_control.xacro
-│   └── gazebo_sensor_plugin.xacro
-└── worlds
-    └── cafe.world
+dynominion_gazebo       
+├── CMakeLists.txt      
+├── config      
+│   ├── diff_drive_controller.yaml      
+│   └── gz_bridge.yaml      
+├── dynominion_gazebo       
+│   ├── __init__.py     
+│   ├── joint_state_republisher.py      
+│   └── odom_modifier.py        
+├── launch      
+│   ├── dynominion_gazebo.launch.py     
+│   └── rviz_model_view.launch.py       
+├── models      
+│   ├── actor           
+│   ├── Cafe    
+│   ├── Cafe_table      
+│   └── male_visitor        
+├── package.xml     
+├── README.md       
+├── rviz        
+│   └── view_robot.rviz     
+├── urdf        
+│   ├── dynominion.urdf.xacro       
+│   ├── gazebo_ros2_control.xacro       
+│   └── gazebo_sensor_plugin.xacro      
+└── worlds      
+    └── cafe.world      
 
 ###Package Requirements
 

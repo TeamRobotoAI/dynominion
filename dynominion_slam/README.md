@@ -33,23 +33,23 @@ The launch folder includes three main launch files:
 
 ###Package Structure
 
-dynominion_slam
-├── CMakeLists.txt
-├── config
-│   ├── laser_filter.yaml
-│   ├── mapper_params_offline.yaml
-│   ├── mapper_params_online_async.yaml
-│   └── mapper_params_online_sync.yaml
-├── include
-│   └── dynominion_slam
-├── launch
-│   ├── offline_launch.py
-│   ├── online_async_launch.py
-│   └── online_sync_launch.py
-├── package.xml
-├── README.md
-└──rviz  
-   └── mapping.rviz
+dynominion_slam     
+├── CMakeLists.txt  
+├── config  
+│   ├── laser_filter.yaml   
+│   ├── mapper_params_offline.yaml  
+│   ├── mapper_params_online_async.yaml     
+│   └── mapper_params_online_sync.yaml  
+├── include     
+│   └── dynominion_slam     
+├── launch      
+│   ├── offline_launch.py       
+│   ├── online_async_launch.py      
+│   └── online_sync_launch.py   
+├── package.xml     
+├── README.md   
+└──rviz     
+   └── mapping.rviz 
 
 
 ###Package Requirements 

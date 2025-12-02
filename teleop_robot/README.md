@@ -12,19 +12,19 @@ The node sends stepwise velocity commands that change in small units, producing 
 
 ###Package Structure
 
-teleop_robot
-├── README.md
-├── resource
-│   └── teleop_robot
-├── setup.cfg
-├── setup.py
-├── teleop_robot
-│   ├── __init__.py
-│   └── teleop_key.py
-└── test
-    ├── test_copyright.py
-    ├── test_flake8.py
-    └── test_pep257.py
+teleop_robot    
+├── README.md   
+├── resource    
+│   └── teleop_robot    
+├── setup.cfg   
+├── setup.py    
+├── teleop_robot    
+│   ├── __init__.py     
+│   └── teleop_key.py   
+└── test    
+    ├── test_copyright.py   
+    ├── test_flake8.py  
+    └── test_pep257.py  
 
 ###Package Requirements
 

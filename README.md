@@ -3,11 +3,11 @@ A ROS 2–based open-source Autonomous Mobile Robot platform featuring 80 kg pay
 
 ###Structure
 
-dynominion
-├── dynominion_description
-├── dynominion_gazebo
-├── dynominion_navigation
-├── dynominion_slam
-├── LICENSE
-├── README.md
-└── teleop_robot
+dynominion  
+├── dynominion_description  
+├── dynominion_gazebo   
+├── dynominion_navigation   
+├── dynominion_slam 
+├── LICENSE     
+├── README.md   
+└── teleop_robot    
