@@ -7,7 +7,8 @@ dynominion
 ├── dynominion_description  
 ├── dynominion_gazebo   
 ├── dynominion_navigation   
-├── dynominion_slam     
+├── dynominion_slam   
+├── dynominion_x
 ├── LICENSE     
 ├── README.md   
 └── teleop_robot    
