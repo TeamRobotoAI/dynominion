@@ -8,10 +8,10 @@ This package integrates SLAM Toolbox with the Dynominion robot to perform simult
 
 It includes multiple launch configurations for different mapping modes and uses parameter files stored in the **config/** folder for customization.
 
-The launch folder includes three main launch files:
-	- online_async_launch.py – Performs live mapping asynchronously. The map is updated after loop closures or periodic optimizations.
-    - online_sync_launch.py – Performs live mapping synchronously, updating the map with each incoming sensor measurement.
-    - offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
+The launch folder includes three main launch files:     
+* online_async_launch.py – Performs live mapping asynchronously. The map is updated after loop closures or periodic optimizations.
+* online_sync_launch.py – Performs live mapping synchronously, updating the map with each incoming sensor measurement.
+* offline_launch.py – Used for offline mapping with previously recorded data stored as ROS bags.
 
 ### Package Structure
 
@@ -44,6 +44,14 @@ Additional requirement:
 
 ### Launch
 
-   `ros2 launch dynominion_slam online_async_launch.py` 
-   `ros2 launch dynominion_slam online_sync_launch.py`  
-   `ros2 launch dynominion_slam offline_launch.py`
+    ```bash
+    ros2 launch dynominion_slam online_async_launch.py 
+    ```
+
+   ```bash
+   ros2 launch dynominion_slam online_sync_launch.py
+   ```  
+
+   ```bash
+   ros2 launch dynominion_slam offline_launch.py
+   ```

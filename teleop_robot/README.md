@@ -32,4 +32,7 @@ teleop_robot
     - geometry_msgs 
 
 ### Node
-    `ros2 run teleop_robot teleop_key`
+    
+    ```bash
+    ros2 run teleop_robot teleop_key
+    ```

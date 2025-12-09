@@ -26,5 +26,5 @@ dynominion_description
 
 ### System Requirements
 
-         - urdf, 
+         - urdf      
          - xacro

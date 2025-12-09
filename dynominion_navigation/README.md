@@ -32,5 +32,7 @@ dynominion_navigation
     - geometry_msgs, sensor_msgs
 
 ### Launch
-
-`ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py`
+    
+    ```bash
+    ros2 launch dynominion_navigation dynominion_nav_bringup.launch.py
+    ```
