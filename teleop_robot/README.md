@@ -1,6 +1,6 @@
 #   teleop_robot
 
-### Overview
+## Overview
 
 This package is used to publish messages in the topic **/cmd_vel** of type **geometry_msgs/msg/TwistStamped**, which act as control commands for the Dynominion robot.
 
@@ -10,8 +10,8 @@ It serves as a teleoperation control module, allowing the user to move the robot
 
 The node sends stepwise velocity commands that change in small units, producing stable and controllable robot movement.
 
-### Package Structure
-
+## Package Structure
+```
 teleop_robot    
 ├── README.md   
 ├── resource    
@@ -25,14 +25,24 @@ teleop_robot
     ├── test_copyright.py   
     ├── test_flake8.py  
     └── test_pep257.py  
+```
+## Requirements
 
-### Package Requirements
+| Package | Purpose |
+|---------|---------|
+| `rclpy` | Python client library for ROS 2 nodes and communication |
+| `geometry_msgs` | Provides standard geometric message types |
 
-    - rclpy
-    - geometry_msgs 
-
-### Node
+## Node
     
 ```bash
 ros2 run teleop_robot teleop_key
 ```
+
+![Teleop Command](doc/teleop_cmd.png)
+
+---
+
+## Teleop Demo
+
+![Teleop Demo](doc/teleop.gif)
