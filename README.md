@@ -34,7 +34,10 @@ A ROS 2–based open-source Autonomous Mobile Robot platform featuring 80 kg pay
 
 
 ### Real Robot
-For operating the physical robot, refer to the [Dynominion X Documentation](dynominion_x/README.md).
+For operating the physical robot, refer to the [Dynominion X Real Robot Guide](dynominion_x/REAL_README.md).
+
+### Simulation
+For simulation usage, refer to the [Dynominion X Simulation Guide](dynominion_x/SIM_README.md).
 
 ## Structure
 
@@ -42,12 +45,12 @@ This repository contains the following packages:
 
 | Package | Description |
 |---------|-------------|
-| `dynominion_description` | Robot URDF/Xacro models and visualization. |
-| `dynominion_gazebo` | Gazebo simulation environments and plugins. |
-| `dynominion_navigation` | Navigation2 stack configuration. |
-| `dynominion_slam` | SLAM (Simultaneous Localization and Mapping) setup. |
-| `dynominion_x` | User manuals and standard operating procedures. |
-| `teleop_robot` | Teleoperation nodes for manual control. |
+| [`dynominion_description`](dynominion_description/README.md) | Robot URDF/Xacro models and visualization. |
+| [`dynominion_gazebo`](dynominion_gazebo/README.md) | Gazebo simulation environments and plugins. |
+| [`dynominion_navigation`](dynominion_navigation/README.md) | Navigation2 stack configuration. |
+| [`dynominion_slam`](dynominion_slam/README.md) | SLAM (Simultaneous Localization and Mapping) setup. |
+| [`dynominion_x`](dynominion_x/README.md) | Entry point for real robot and simulation documentation. |
+| [`teleop_robot`](teleop_robot/README.md) | Teleoperation nodes for manual control. |
 
 ### File Tree
 ```
