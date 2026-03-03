@@ -2,6 +2,8 @@
 
 A ROS 2–based open-source Autonomous Mobile Robot platform featuring 80 kg payload capacity, robotic arm integration, and modular hardware for robotics education and applied research.
 
+![RobotoAI Dyno Minion](dynominion_x/robotoai_dyno_minion.jpeg)
+
 ## Features
 
 - **High Payload Capacity**: Supports up to 80 kg for versatile applications.
