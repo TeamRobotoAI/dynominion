@@ -9,7 +9,7 @@ A ROS 2–based open-source Autonomous Mobile Robot platform featuring 80 kg pay
 - **High Payload Capacity**: Supports up to 80 kg for versatile applications.
 - **Modular Hardware**: Designed for easy customization and research.
 - **ROS 2 Integration**: Built on the latest ROS 2 framework for robust performance.
-- **Simulation Support**: Includes Gazebo worlds and models for virtualization.
+- **Simulation Support**: Includes Gazebo worlds and virtual robot model for simulation.
 
 ## Installation
 
