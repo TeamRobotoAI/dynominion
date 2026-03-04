@@ -32,6 +32,24 @@ A ROS 2–based open-source Autonomous Mobile Robot platform featuring 80 kg pay
     source install/setup.bash
     ```
 
+## Docker Compose
+
+### Compose Command
+```bash
+docker compose up -d --build dynominion
+```
+
+### Check Container
+```bash
+docker ps
+```
+Look for `dynominion` in the `NAMES` column.
+
+### Exec Command
+```bash
+docker exec -it dynominion bash
+```
+
 
 ### Real Robot
 For operating the physical robot, refer to the [Dynominion X Real Robot Guide](dynominion_x/REAL_README.md).

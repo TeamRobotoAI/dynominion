@@ -1,0 +1,24 @@
+services:
+  dynominion:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: dynominion
+      args:
+        DEV_USERNAME: robotoai
+    image: dynominion:build_v1
+    container_name: dynominion
+    tty: true
+    volumes:
+      - /dev:/dev:rw
+      - /tmp/.Xauthority:/tmp/.Xauthority:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /tmp:/tmp:rw
+      - /run/user/1000/wayland-0:/tmp/wayland-0
+    network_mode: host
+    environment:
+      - DISPLAY=${DISPLAY}
+      - WAYLAND_DISPLAY=wayland-0
+      - XDG_RUNTIME_DIR=/tmp/wayland-0
+      - ROS_DOMAIN_ID=5
+    privileged: true
