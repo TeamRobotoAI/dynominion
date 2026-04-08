@@ -6,19 +6,34 @@ services:
       target: dynominion
       args:
         DEV_USERNAME: robotoai
-    image: dynominion:build_v1
+
+    image: dynominion:latest
     container_name: dynominion
+
     tty: true
-    volumes:
-      - /dev:/dev:rw
-      - /tmp/.Xauthority:/tmp/.Xauthority:rw
-      - /tmp/.X11-unix:/tmp/.X11-unix
-      - /tmp:/tmp:rw
-      - /run/user/1000/wayland-0:/tmp/wayland-0
-    network_mode: host
-    environment:
-      - DISPLAY=${DISPLAY}
-      - WAYLAND_DISPLAY=wayland-0
-      - XDG_RUNTIME_DIR=/tmp/wayland-0
-      - ROS_DOMAIN_ID=5
+    stdin_open: true
     privileged: true
+
+    network_mode: ${NETWORK_MODE:-host}
+
+    environment:
+      DISPLAY: ${DISPLAY:-:0}
+      WAYLAND_DISPLAY: ${WAYLAND_DISPLAY:-wayland-0}
+      XDG_RUNTIME_DIR: ${XDG_RUNTIME_DIR:-/tmp}
+      XAUTHORITY: /home/robotoai/.Xauthority
+      QT_X11_NO_MITSHM: 1
+      PULSE_SERVER: ${PULSE_SERVER:-unix:/mnt/wslg/PulseServer}
+      LD_LIBRARY_PATH: /usr/lib/wsl/lib
+      ROS_DOMAIN_ID: ${ROS_DOMAIN_ID:-5}
+
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    volumes:
+      - .:/home/robotoai/dynominion/src:rw
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/home/robotoai/.Xauthority:rw
+      - /mnt/wslg:/mnt/wslg:ro
+      - /usr/lib/wsl/lib:/usr/lib/wsl/lib:ro
+      - /dev:/dev:rw
+      - /tmp:/tmp:rw
